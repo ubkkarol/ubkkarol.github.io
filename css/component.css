@@ -272,6 +272,26 @@ p {
 	background: #1b1b1b;
 }
 
+/* CSS for the back button */
+.back-button {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust left position as needed */
+    background-color: #5e5e5e; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Button border radius */
+    font-size: 16px; /* Button font size */
+    z-index: 1; /* Ensure button appears above other content */
+}
+
+.back-button:hover {
+    background-color: #525252; /* Button background color on hover */
+}
+
+
+
 /******** LEFT SIDE SECTION ********/
 
 .about {
@@ -301,6 +321,16 @@ p {
     background-color: #1b1b1b;
     filter: grayscale(100%) brightness(50%);
 }
+
+.about-bg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Change height to 1px */
+    background-color: black; /* Set background color to black */
+}
+
 
 .info-wrapper {
     position: absolute;
@@ -343,6 +373,7 @@ p {
     padding: 10px 20px; /* Add padding to the text */
     border-radius: 5px; /* Add rounded corners to the black box */
   }  
+
 
 
 /******** RIGHT SIDE SECTION ********/
@@ -392,14 +423,12 @@ p {
 /******** HEADER SECTION ********/
 
 .header {
-    background: url('../images/placeholderbg.jpg') no-repeat center center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    position: relative;
-    filter: brightness(80%) contrast(120%);
+    height: 5px; /* Change height to 1px */
+    background-color: #b68e52; /* Set background color to bronce */
   }
   
 
