@@ -432,13 +432,37 @@ p {
 /******** HEADER SECTION ********/
 
 .header {
+    /* Original Background Image */
+    background: url('../images/placeholderbg.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    /* Black and White Filter */
+    filter: grayscale(100%);
+}
+
+/* Overlay to darken the image */
+.header::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5px; /* Change height to 5x */
-    background-color: #b68e52; /* Set background color to bronce */
-  }
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+/* For Dark Mode */
+.dark-mode .header::before {
+    /* Adjust opacity for dark mode */
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+}
+
+
   
 
 .header-wrapper {  
