@@ -47,7 +47,9 @@ body {
 }
 
 #particles {
-	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 0;
 }
 
 .no-padding {
@@ -272,71 +274,20 @@ p {
 	background: #1b1b1b;
 }
 
-/* CSS for the back button */
-.back-button {
-    position: absolute;
-    top: 10px; /* Adjust top position as needed */
-    left: 10px; /* Adjust left position as needed */
-    background-color: #5e5e5e; /* Button background color */
-    color: white; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    text-decoration: none; /* Remove default underline */
-    border-radius: 5px; /* Button border radius */
-    font-size: 16px; /* Button font size */
-    z-index: 1; /* Ensure button appears above other content */
-}
-
-.back-button:hover {
-    background-color: #525252; /* Button background color on hover */
-}
-
-
-
 /******** LEFT SIDE SECTION ********/
 
 .about {
-    position: relative;
-}
-
-.about-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../images/personalMedia/karolSit.jpg') no-repeat center center;
+    background: url('../images/placeholderbg.jpg') no-repeat center center;
     background-size: cover;
     background-color: #1b1b1b;
-    filter: grayscale(100%) brightness(50%);
 }
 
-.about-bg2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../images/personalMedia/Karol3.jpg') no-repeat center center;
-    background-size: cover;
-    background-color: #1b1b1b;
-    filter: grayscale(100%) brightness(50%);
-}
-
-.about-bg3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px; /* Change height to 1px */
-    background-color: black; /* Set background color to black */
-}
-
-
-.info-wrapper {
+.info-wrapper {  
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .about h3 {
@@ -358,48 +309,26 @@ p {
     background-color: none;
     color: #fff;
     box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
+    animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse {
+    to {
+      box-shadow: 0 0 0 30px rgba(230, 237, 255, 0);
+    }
 }
 
 .about .btn-default:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     background-color: #fff; 
     color: #1b1b1b;
 }
 
-.name {
-    display: inline-block; /* Ensure the black box only wraps around the text */
-    background-color: #333333; /* Set background color to black */
-    color: white; /* Set text color to white */
-    padding: 10px 20px; /* Add padding to the text */
-    border-radius: 5px; /* Add rounded corners to the black box */
-  }  
-
-  .widget-container {
-    display: flex !important;
-    justify-content: center !important;
-    background-color: rgb(10, 10, 10) !important;
-    padding: 20px !important; /* Adjust as needed */
-  }
-  
-    
-
-
-
 /******** RIGHT SIDE SECTION ********/
-
-.boxColor {
-    background-color: #04151f;
-}
-.visit-bg {
-    position: absolute;
-    top: 0;
-    right: 0; /* Set to the right side */
-    width: 50%; /* Half of the screen width */
-    height: 100%;
-    background-size: cover;
-    background-color: #04151f;
-}
-
 
 .bl-box h1 {
     color: #1b1b1b;
@@ -432,14 +361,14 @@ p {
 /******** HEADER SECTION ********/
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px; /* Change height to 5x */
-    background-color: #b68e52; /* Set background color to bronce */
-  }
-  
+  background: url('../images/placeholderbg.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 .header-wrapper {  
   -webkit-transform: translate(-50%,-50%);
