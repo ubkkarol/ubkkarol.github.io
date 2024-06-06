@@ -774,6 +774,10 @@ p {
     color: #dcdcdc;
     margin-bottom: 70px;
 }
+.circular-image {
+    border-radius: 50%;
+  }
+  
 
 /******** LOGOS SECTION START ********/
 
