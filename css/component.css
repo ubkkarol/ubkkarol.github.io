@@ -442,7 +442,7 @@ p {
     position: relative;
     
     /* Black and White Filter */
-    filter: grayscale(100%);
+    /* filter: grayscale(100%);*/
 }
 
 /* Overlay to darken the image */
@@ -608,7 +608,7 @@ p {
 }
 
 .resume p {
-    font-size: 12pt;
+    font-size: 9pt;
     letter-spacing: 1pt;
     color: #dcdcdc;
 }
