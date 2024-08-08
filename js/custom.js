@@ -29,3 +29,4 @@ $(".preloader-wrap").delay(1500).fadeOut('slow');
 function redirectToIndex() {
   window.location.href = 'visit.html';
 }
+
