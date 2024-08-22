@@ -1,0 +1,70 @@
+<!-- PANEL II -->
+
+
+        <!-- Merged Panel with Scrollable Content -->
+        <div class="bl-panel-items" id="bl-panel-work-items">
+          <div data-panel="panel-2" id="panel-2" style="height: 100%; overflow-y: auto;">
+            <div style="padding: 20px;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="images/single2.jpg" class="img-fluid" alt="project-image" />
+                  </div>
+
+                  <div class="col-md-6">
+                    <h3>CONSULTING</h3>
+                    <h5>Chcesz więcej? Skaluj swój biznes skutecznie</h5>
+                    <p>
+                      Jesteś przedsiębiorcą który odnosi sukcesy i chce więcej?
+                      Masz stabilną pozycję na rynku i nie wiesz jak zwiększyć swoją organizację w efektywny sposób?
+                      Masz intuicję do biznesu, ale brakuje Ci wiedzy oraz doświadczenia w skalowaniu organizacji. 
+                      A może do tej pory trafiałeś na teoretyków zarządzania lub ludzi którym się udało ale nie mieli odniesienia do ugruntowanej wiedzy?
+
+                      Zobacz, że można inaczej. Zarezerwuj termin konsultacji ze mną i wprowadź swoją firmę na wyższy poziom.
+
+                      Podczas spotkania skupiamy się na Twoim problemie lub wyzwaniu. 
+                      Bazując na moim wieloletnim doświadczeniu wypracowujemy najlepsze rozwiązania dopasowane do Twoich potrzeb.
+                      Po rozmowie ze mną zyskujesz perspektywę osoby z zewnątrz która z sukcesami rozwija od wielu lat organizacje.
+                    </p>
+                    <div class="project-btn">
+                      <a class="btn btn-default" href="project.html" role="button">KONTAKT</a>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="resume" id="resume">
+                  <div class="row">
+                    <div class="col-md-12 col-xs-12 text-center">
+                      <h2 class="title">Jak to działa?</h2>
+                      <hr class="line" />
+                    </div>
+                    <div class="col-md-3 col-xs-12"></div>
+                    <div class="col-md-4 col-xs-8">
+                      <p>Rezerwujesz termin rozmowy.</p>
+                      <hr />
+                    </div>
+                    <div class="col-md-3 col-xs-12"></div>
+                    <div class="col-md-4 col-xs-12">
+                      <p>Przed spotkanie opisujesz lub nagrywasz problem/wyzwanie nad którym chcesz się skupić</p>
+                      <hr />
+                    </div>
+                    <div class="col-md-3 col-xs-12"></div>
+                    <div class="col-md-4 col-xs-12">
+                      <p>Spotykamy się i rozpracowujemy Twoje wyzwanie – pracujemy nad Twoim pomysłem lub analizujemy propozycję którą przygotowałem
+                      </p>
+                      <hr />
+                    </div>
+                    <div class="col-md-3 col-xs-12"></div>
+                    <div class="col-md-4 col-xs-12">
+                      <p>Wychodzisz z planem działania i kolejnymi krokami które doprowadzą Cię do osiągnięcia celu.</p>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <span class="bl-icon bl-icon-close"></span>
+          </nav>
+        </div>

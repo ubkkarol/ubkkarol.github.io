@@ -1151,13 +1151,11 @@ div.bl-panel-items > div {
 }
 
 div.bl-panel-items > div > div {
-	margin: 0 auto;
-    top: 50px;
-    bottom: 100px;
-	opacity: 1;
-	pointer-events: auto;
-    display: flex;
-      
+    margin: 0 auto;
+    padding: 50px 0 100px; /* Adjust padding as needed */
+    opacity: 1;
+    pointer-events: auto;
+    display: block; /* Changed from flex */
 }
 
 div.bl-panel-items > div > div h3 {
