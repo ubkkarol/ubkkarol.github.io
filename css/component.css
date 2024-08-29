@@ -1190,10 +1190,141 @@ div.bl-panel-items > div > div {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: rgb(96, 96, 96);
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Specific styles for contact modal container */
+.contact-modal {
+    display: flex; /* Flexbox to center the content */
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove any padding */
+}
+
+/* Specific styles for contact modal content */
+.contact-modal .modal-content {
+    background-color: #000000; /* Light background */
+    margin: auto;
+    padding: 10px 20px 20px; /* Reduced padding overall */
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Adjust the form container */
+.contact-modal .container {
+    padding-top: 0; /* Remove top padding */
+    padding-bottom: 0; /* Adjust padding as needed */
+}
+
+/* Adjust title styling */
+.contact-modal .title {
+    margin: 0; /* Remove any margin */
+    padding: 10px 0; /* Minimal padding for spacing */
+}
+
+/* Adjust row styling */
+.contact-modal .row {
+    margin: 0; /* Remove unnecessary margin */
+    padding: 0; /* Ensures no extra spacing */
+}
+
+.form2 {
+    background-color: #0a0a0a;
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+
+.form2 h2 {
+    font-size: 24pt;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1pt;
+}
+
+.form2 .line {
+    margin: 30px auto; 
+    width: 30px;
+    height: 2px;
+    background-color: #B68E52;
+}
+
+.form2 .text {
+    width: 100%;
+    height: 40px;
+    padding: 15px 15px;
+    border: 0;
+    font-size: 10pt;
+    background-color: #111111;
+    color: #fff;
+    border-bottom: 2px solid #1b1b1b;
+}
+
+.form2 .text:focus {
+    transition: border .6s;
+    -webkit-transition: border .6s;
+    outline: none;
+    border-bottom: 2px solid #B68E52;
+}
+
+.form2 .email {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    padding: 15px 15px;
+    border: 0;
+    font-size: 10pt;
+    background-color: #111111;
+    color: #dcdcdc;
+    border-bottom: 2px solid #1b1b1b; 
+}
+
+.form2 .email:focus {
+    transition: border .6s;
+    -webkit-transition: border .6s;
+    outline: none;
+    border-bottom: 2px solid #B68E52;
+}
+
+.form2 .msg {
+    margin-top: 30px;
+    width: 100%;
+    height: 130px;
+    padding: 15px 15px;
+    border: 0;
+    font-size: 10pt;
+    background-color: #111111;
+    color: #dcdcdc;
+    border-bottom: 2px solid #1b1b1b;
+}
+
+.form2 .msg:focus {
+    transition: border .6s;
+    -webkit-transition: border .6s;
+    outline: none;
+    border-bottom: 2px solid #B68E52;
+}
+
+.form2 .btn {
+    font-weight: 400;
+    font-size: 10pt;
+    letter-spacing: 1pt;
+    color: #fff;
+    background-color: #B68E52;
+    border-radius: 0px;
+    padding: 15px 40px;
+    margin-top: 50px;
+}
+
 
 
 /******** WORKS SECTION START ********/
