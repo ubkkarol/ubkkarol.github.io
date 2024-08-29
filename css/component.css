@@ -1243,24 +1243,27 @@ div.bl-panel-items > div > div h3 {
 	font-size: 20pt;
 	font-weight: 400;
     letter-spacing: 1pt;
-    color: #b9b9b9;
+    color: #000000;
 	margin: 0 0 20px 0;
 }
 
 div.bl-panel-items > div > div h5 {
+    font-family: 'Open Sans', sans-serif; /* Use a font supporting Polish characters */
     font-size: 12pt;
     font-weight: 400;
     letter-spacing: 1pt;
-    color: #b9b9b9;
+    color: #000000;
     margin: 0 0 20px 0;
 }
 
 div.bl-panel-items > div > div p {
+    font-family: 'Open Sans', sans-serif; /* Use a font supporting Polish characters */
 	font-size: 11pt;
     line-height: 16pt;
     letter-spacing: 1pt;
-    color: #898989;
+    color: #5e5e5e;
     margin-top: 15px;
+    text-align: justify; /* Justify paragraph text */
 }
 
 div.bl-panel-items > div > div img {

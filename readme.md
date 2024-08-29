@@ -5,6 +5,7 @@
 - [U] Panel I, modified, width changed and scrolling bar hidden.
 - [*] Kontakt button displaying Pop Up
   - [U] custom.js, component.css and kontaktBtn modified for this change.
+- [*] Panel Items h5 font and design modifications. New Font Family Open Sans.
 
 # Current Version 1.3
 
