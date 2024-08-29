@@ -6,6 +6,7 @@
 - [*] Kontakt button displaying Pop Up
   - [U] custom.js, component.css and kontaktBtn modified for this change.
 - [*] Panel Items h5 font and design modifications. New Font Family Open Sans.
+- [*] Panels images dim on hover modification.
 
 # Current Version 1.3
 

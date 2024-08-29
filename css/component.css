@@ -1207,6 +1207,18 @@ nav {
 	right: 40px;
 }
 
+/* Default state: images are semi-transparent */
+#bl-work-items li img {
+    opacity: 0.5; /* Set the initial opacity */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover state: images are fully opaque */
+#bl-work-items li:hover img {
+    opacity: 1; /* Full opacity on hover */
+}
+
+
 /* Styling for bl-panel-items */
 .bl-panel-items {
     position: relative; /* Ensure it's properly positioned in the stacking context */
