@@ -1154,19 +1154,30 @@ div.bl-panel-items > div > div {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+    overflow: auto; /* Enable scroll if needed */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
 }
 
 /* Modal content */
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 10% from the top and centered */
+    margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 600px; /* Maximum width */
-    border-radius: 8px; /* Rounded corners */
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    transform: scale(0.8); /* Initial scale for animation */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+/* State when the modal is visible */
+.modal.show .modal-content {
+    transform: scale(1); /* Scale up for animation */
+    opacity: 1; /* Fade in effect */
 }
 
 /* Close button */
