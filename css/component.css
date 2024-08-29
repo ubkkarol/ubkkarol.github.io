@@ -1162,10 +1162,10 @@ div.bl-panel-items > div > div {
 
 /* Modal content */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #000000;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #202020;
     width: 80%;
     max-width: 600px;
     border-radius: 8px;
