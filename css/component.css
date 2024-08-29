@@ -608,17 +608,22 @@ p {
 }
 
 .resume p {
-    font-size: 9pt;
-    letter-spacing: 1pt;
-    color: #dcdcdc;
+    font-size: 9pt; /* Maintains the current font size */
+    letter-spacing: 1pt; /* Keeps the current letter spacing */
+    color: #dcdcdc; /* Applies a consistent text color */
+    font-weight: bold; /* Ensures step titles are emphasized */
+    margin: 20px 0; /* Provides adequate vertical spacing */
 }
 
+
 .resume hr {
-    margin: 50px 0px;
-    width: auto;
-    height: 2px;
-    background-color: rgba(255, 255, 255, .2);
+    margin: 20px auto; /* Reduce margin for better spacing balance */
+    width: 50%; /* Set width for centering effect */
+    height: 2px; /* Retain current thickness */
+    background-color: rgba(255, 255, 255, .2); /* Maintain stylistic color consistency */
+    border: none; /* Ensure no default border is applied */
 }
+
 
 /******** SKILLS SECTION START ********/
 
@@ -1140,7 +1145,74 @@ div.bl-panel-items > div > div {
     border: 8px solid #fff;
 }
 
+/* Modal container (hidden by default) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /******** WORKS SECTION START ********/
+
+/* Styling for nav to ensure it's on top */
+nav {
+    position: fixed; /* Keeps it on top while scrolling, adjust as needed */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width, or adjust as necessary */
+    z-index: 1000; /* Ensure this is higher than any content it overlaps */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Set a background color for visibility */
+}
+
+.bl-icon.bl-icon-close {
+    position: absolute;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    cursor: pointer; /* Make it appear clickable */
+    font-size: 8px; /* Adjust size if needed */
+    color: red; /* Adjust color to contrast with the background */
+    top: 20px;
+	right: 40px;
+}
+
+/* Styling for bl-panel-items */
+.bl-panel-items {
+    position: relative; /* Ensure it's properly positioned in the stacking context */
+    z-index: 1; /* Lower than nav to keep it below */
+    /* Other styles here */
+}
 
 div.bl-panel-items,
 div.bl-panel-items > div {
@@ -1157,7 +1229,15 @@ div.bl-panel-items > div > div {
     opacity: 1;
     pointer-events: auto;
     display: block; /* Changed from flex */
+    width: 95%;
+    overflow-y: scroll; /* Allow vertical scrolling */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    box-sizing: border-box;
+
 }
+
+
 
 div.bl-panel-items > div > div h3 {
 	font-size: 20pt;

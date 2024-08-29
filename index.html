@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/modernizr.custom.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/144940860.js"></script>
+    <!-- End of HubSpot Embed Code -->
   </head>
   <body>
     <!-- Preloader -->
@@ -315,7 +319,6 @@
               </div>
             </div>
 
-
         <!-- Clients Review Section -->
 
             <!-- Contact Info Section -->
@@ -357,11 +360,8 @@
             </footer>
           </div>
 
-          <img
-            src="images/close.png"
-            class="bl-icon bl-icon-close"
-            alt="close"
-          />
+          <img src="images/close.png" class="bl-icon bl-icon-close" alt="close">
+
         </section>
 
         <!-- Portfolio Section -->
@@ -613,39 +613,68 @@
               Bazując na moim wieloletnim doświadczeniu wypracowujemy najlepsze rozwiązania dopasowane do Twoich potrzeb.
               Po rozmowie ze mną zyskujesz perspektywę osoby z zewnątrz która z sukcesami rozwija od wielu lat organizacje.
             </p>
-            <div class="project-btn">
-              <a class="btn btn-default" href="project.html" role="button">KONTAKT</a>
-            </div>
+            <!-- Kontakt Button -->
+<div class="project-btn">
+  <a class="btn btn-default" href="#" role="button" id="kontaktBtn">KONTAKT</a>
+</div>
+
+<!-- Modal for Contact Form -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="form">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-xs-12 text-center">
+                      <h2 class="title">Let's Talk</h2>
+                      <hr class="line" />
+                  </div>
+                  <div class="col-md-1 col-xs-12"></div>
+                  <div class="col-md-10 col-sm-12 col-xs-12 text-center">
+                      <form id="form">
+                          <input type="text" class="text" name="name" placeholder="NAME" required /><br />
+                          <input type="text" class="email" name="phone" placeholder="EMAIL" required /><br />
+                          <textarea class="msg" name="text" placeholder="MESSAGE" required></textarea>
+                          <button class="btn">SEND MESSAGE</button>
+                      </form>
+                  </div>
+                  <div class="col-md-1 col-xs-12"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
           </div>
         </div>
         <hr />
         
         <div class="resume" id="resume">
           <div class="row">
-            <div class="col-md-12 col-xs-12 text-center">
-              <h2 class="title">Jak to działa?</h2>
-              <hr class="line" />
-            </div>
-            <div class="col-md-3 col-xs-12"></div>
-            <div class="col-md-4 col-xs-8">
-              <p>Rezerwujesz termin rozmowy.</p>
-              <hr />
-            </div>
-            <div class="col-md-3 col-xs-12"></div>
-            <div class="col-md-4 col-xs-12">
-              <p>Przed spotkanie opisujesz lub nagrywasz problem/wyzwanie nad którym chcesz się skupić</p>
-              <hr />
-            </div>
-            <div class="col-md-3 col-xs-12"></div>
-            <div class="col-md-4 col-xs-12">
-              <p>Spotykamy się i rozpracowujemy Twoje wyzwanie – pracujemy nad Twoim pomysłem lub analizujemy propozycję którą przygotowałem</p>
-              <hr />
-            </div>
-            <div class="col-md-3 col-xs-12"></div>
-            <div class="col-md-4 col-xs-12">
-              <p>Wychodzisz z planem działania i kolejnymi krokami które doprowadzą Cię do osiągnięcia celu.</p>
-              <hr />
-            </div>
+              <div class="col-md-12 col-xs-12 text-center">
+                  <h2 class="title">Jak to działa?</h2>
+                  <hr class="line" />
+              </div>
+      
+              <div class="col-md-6 col-xs-12 text-center">
+                  <p>1. Rezerwujesz termin rozmowy.</p>
+                  <hr />
+              </div>
+      
+              <div class="col-md-6 col-xs-12 text-center">
+                  <p>2. Przed spotkanie opisujesz lub nagrywasz problem/wyzwanie nad którym chcesz się skupić</p>
+                  <hr />
+              </div>
+      
+              <div class="col-md-6 col-xs-12 text-center">
+                  <p>3. Spotykamy się i rozpracowujemy Twoje wyzwanie – pracujemy nad Twoim pomysłem lub analizujemy propozycję którą przygotowałem</p>
+                  <hr />
+              </div>
+      
+              <div class="col-md-6 col-xs-12 text-center">
+                  <p>4. Wychodzisz z planem działania i kolejnymi krokami które doprowadzą Cię do osiągnięcia celu.</p>
+                  <hr />
+              </div>
           </div>
         </div>
       </div>
