@@ -578,6 +578,7 @@ p {
     color: #fff;
     font-size: 24pt;
     letter-spacing: 1pt;
+    margin-top: 50px; /* Adjust this value for more or less space */
 }
 
 .resume .line {
@@ -619,12 +620,31 @@ p {
 
 .resume hr {
     margin: 20px auto; /* Reduce margin for better spacing balance */
-    width: 50%; /* Set width for centering effect */
+    width: 90%; /* Set width for centering effect */
     height: 2px; /* Retain current thickness */
     background-color: rgba(255, 255, 255, .2); /* Maintain stylistic color consistency */
     border: none; /* Ensure no default border is applied */
 }
 
+/* Personal */
+
+.resume .value-item {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically center-align text and icon */
+}
+
+/* Icon specific styles ensuring the appropriate sizing and spacing */
+.resume .icon {
+    width: 32px; /* Fixed icon width */
+    height: 32px; /* Fixed icon height */
+    margin-right: 20px; /* Gap between icon and the paragraph */
+    filter: invert(1); /* Inverts black to white */
+}
+
+/* Paragraph styling */
+.resume p {
+    margin: 0; /* Remove default paragraph margin to avoid extra spacing */
+}
 
 /******** SKILLS SECTION START ********/
 

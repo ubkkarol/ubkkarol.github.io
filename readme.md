@@ -1,14 +1,16 @@
 # Current Version 1.5
 
 ## Implementations and things to be added
-  - [] Server Mail connection PHP --> 
-  - [] Wartosci Section add logos
-  - [] Keep consistency on Fonts and Letter size on the Home Section
-  - [] O Mnie section to be reduced with new text
-  - [] Zyciorys fix center
-  - [] Fix closing btn on the Mentoring and Consulting side
-  - [] Jak to dziawa colors match, numeration and center text.
-  - 
+
+- [] Server Mail connection PHP --> Pending
+  - [+] PHPMailer library added && php configuration for email added.
+- [*] Wartosci Section add logos
+- [] Keep consistency on Fonts and Letter size on the Home Section
+- [] O Mnie section to be reduced with new text
+- [] Zyciorys fix center
+- [] Fix closing btn on the Mentoring and Consulting side
+- [] Jak to dziawa colors match, numeration and center text.
+-
 
 # Current Version 1.4
 
@@ -28,4 +30,3 @@
 - Visit.html was removed, everything is now merged into the mentoring and consulting panels.
 
 - [*]Panels h3 and h5 colors modified
-
