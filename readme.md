@@ -6,7 +6,7 @@
   - [+] PHPMailer library added && php configuration for email added.
 - [*] Wartosci Section add logos
 - [] Keep consistency on Fonts and Letter size on the Home Section
-- [] O Mnie section to be reduced with new text
+- [*] O Mnie section to be reduced with new text
 - [] Zyciorys fix center
 - [] Fix closing btn on the Mentoring and Consulting side
 - [] Jak to dziawa colors match, numeration and center text.
