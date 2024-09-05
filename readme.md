@@ -1,3 +1,15 @@
+# Current Version 1.5
+
+## Implementations and things to be added
+  - [] Server Mail connection PHP
+  - [] Wartosci Section add logos
+  - [] Keep consistency on Fonts and Letter size on the Home Section
+  - [] O Mnie section to be reduced with new text
+  - [] Zyciorys fix center
+  - [] Fix closing btn on the Mentoring and Consulting side
+  - [] Jak to dziawa colors match, numeration and center text.
+  - 
+
 # Current Version 1.4
 
 ## Implementations

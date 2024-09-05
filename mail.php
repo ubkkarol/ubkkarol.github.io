@@ -1,28 +1,12 @@
 <?php
+$recipient = "your-email@example.com";  // This can be any email, but it won't actually send an external email with MailHog
+$subject = "Test Email via MailHog";
+$message = "This is a test email sent from local development environment using MailHog.";
+$headers = "From: me@example.com";
 
-// Set the recipient email address
-$recepient = "estrada.cristian@hotmail.com"; // Replace with your actual email address
-$sitename = "Karol's Portfolio";
-
-// Retrieve and sanitize user inputs
-$name = isset($_POST["name"]) ? trim(strip_tags($_POST["name"])) : "";
-$email = isset($_POST["email"]) ? trim(strip_tags($_POST["email"])) : "";
-$text = isset($_POST["text"]) ? trim(strip_tags($_POST["text"])) : "";
-
-// Prepare the email message
-$message = "Name: $name \nEmail: $email \nMessage: $text";
-
-// Set the email subject
-$pagetitle = "New Message From \"$sitename\"";
-
-// Set the email headers
-$headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";
-$headers .= "From: $email\r\n";
-
-// Send the email
-if (mail($recepient, $pagetitle, $message, $headers)) {
-    echo "Message sent successfully.";
+if (mail($recipient, $subject, $message, $headers)) {
+    echo "Email sent successfully.";
 } else {
-    echo "Failed to send the message.";
+    echo "Failed to send the email.";
 }
 ?>

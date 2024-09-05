@@ -608,11 +608,12 @@ p {
 }
 
 .resume p {
-    font-size: 9pt; /* Maintains the current font size */
+    font-size: 11pt; /* Maintains the current font size */
     letter-spacing: 1pt; /* Keeps the current letter spacing */
     color: #dcdcdc; /* Applies a consistent text color */
     font-weight: bold; /* Ensures step titles are emphasized */
     margin: 20px 0; /* Provides adequate vertical spacing */
+    text-align: left;
 }
 
 
@@ -1370,12 +1371,13 @@ div.bl-panel-items > div > div h5 {
 
 div.bl-panel-items > div > div p {
     font-family: 'Open Sans', sans-serif; /* Use a font supporting Polish characters */
-	font-size: 11pt;
+	font-size: 13pt;
     line-height: 16pt;
     letter-spacing: 1pt;
     color: #5e5e5e;
     margin-top: 15px;
-    text-align: justify; /* Justify paragraph text */
+    
+    text-align: center; /* Justify paragraph text */
 }
 
 div.bl-panel-items > div > div img {
