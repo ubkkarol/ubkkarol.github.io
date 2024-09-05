@@ -1,7 +1,7 @@
 # Current Version 1.5
 
 ## Implementations and things to be added
-  - [] Server Mail connection PHP
+  - [] Server Mail connection PHP --> 
   - [] Wartosci Section add logos
   - [] Keep consistency on Fonts and Letter size on the Home Section
   - [] O Mnie section to be reduced with new text
