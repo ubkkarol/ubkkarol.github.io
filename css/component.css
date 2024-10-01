@@ -884,9 +884,10 @@ p {
     letter-spacing: 1pt;
     color: #dcdcdc;
     line-height: 23pt;
+    text-align: center;
 }
-
-.swiper-wrapper h4 {
+    
+    .swiper-wrapper h4 {
     margin-top: 15px;
     margin-bottom: 63px;
     font-size: 10pt;
@@ -1103,7 +1104,30 @@ footer h4 {
 
 .bl-icon-close:before {
 
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ff0000;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.4s ease, opacity 0.2s ease; /* Faster transition for opacity */
+    opacity: 1; /* Fully visible by default */
+    
 	content: "\e005";
+}
+
+.bl-icon-close.close-panel { /* Example class applied when closing */
+    opacity: 0; /* Fully invisible */
+}
+
+/* If there's a JavaScript class added to trigger closing animation */
+.bl-panel.fade-out {
+    transition: opacity 0.2s ease; /* Faster transition */
+    opacity: 0; /* Ensure it becomes invisible */
 }
 
 .bl-content, 
@@ -1124,6 +1148,11 @@ div.bl-panel-items > div > div {
 
 .bl-content {
 	background-color: #fff;  
+}
+
+#panel-1 .bl-content {
+    background-color: #0a0a0a; /* Set background color to black for .bl-content in panel-1 */
+    color: white; /* Ensure text color provides enough contrast */
 }
 
 .bl-content article {
@@ -1165,6 +1194,16 @@ div.bl-panel-items > div > div {
 	max-width: 100%;
     border: 8px solid #fff;
 }
+
+#panel-1 .col-md-12 .title {
+    /* Add your custom styles here */
+    color: white; /* Example: Change text color */
+    font-style: italic; /* Example: Make text italic */
+    font-size: 16pt; /* Example: Increase font size */
+    text-align: center; /* Confirm the alignment */
+    /* Add any other styles you need */
+}
+
 
 /* Modal container (hidden by default) */
 .modal {
@@ -1376,7 +1415,7 @@ div.bl-panel-items > div > div h3 {
 	font-size: 20pt;
 	font-weight: 400;
     letter-spacing: 1pt;
-    color: #000000;
+    color: white;
 	margin: 0 0 20px 0;
 }
 
@@ -1387,18 +1426,30 @@ div.bl-panel-items > div > div h5 {
     letter-spacing: 1pt;
     color: #717171;
     margin: 0 0 20px 0;
+    font-weight: bold;
+    text-align: left;
 }
+
+.special-section .special-paragraph {
+    color: #333; /* Change text color */
+    font-size: 13pt; /* Adjust font size */
+    text-align: justify; /* Change alignment */
+    /* Add any other custom styles you need */
+}
+
 
 div.bl-panel-items > div > div p {
     font-family: 'Open Sans', sans-serif; /* Use a font supporting Polish characters */
 	font-size: 13pt;
     line-height: 16pt;
     letter-spacing: 1pt;
+    font-weight: normal;
     color: #5e5e5e;
     margin-top: 15px;
-    
-    text-align: center; /* Justify paragraph text */
+    text-align: justify; /* Justify paragraph text */
 }
+
+
 
 div.bl-panel-items > div > div img {
 	float: left;
@@ -1422,6 +1473,11 @@ div.bl-panel-items > div {
 	transform: translateY(0);
 	transition: transform 0.5s ease-in-out, opacity 0s linear 0.5s;
 	-ms-transform: translateY(0);
+}
+
+#panel-1 {
+    background: #0a0a0a; /* Override for a black background in panel-1 */
+    color: white; /* Ensure text is white for contrast */
 }
 
 div.bl-panel-items nav {
